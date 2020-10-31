@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "Node1",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "C:\\Kodlar\\Blockchain\\Blockchain\\blockchain.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1"
+            },
+            "args": ["run", "--no-reload","--port", "5001"],
+            "jinja": true
+        },
+        {
+            "name": "Cansel",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "C:\\Kodlar\\Blockchain\\Blockchain_Client\\blockchain_client.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1",
+            },
+            "args": [
+                "run",
+                "--no-reload",
+                "--port", "8081",
+            ],
+        },
+        {
+            "name": "Fatih",
+            "type": "python",   
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "C:\\Kodlar\\Blockchain\\Blockchain_Client\\blockchain_client.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1"
+            },
+            "args": ["run", "--no-reload","--port", "8082"],
+            "jinja": true
+        },
+        {
+            "name": "Python: Geçerli Dosya",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
